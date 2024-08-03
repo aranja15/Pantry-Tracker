@@ -81,17 +81,16 @@ export default function Home() {
             <TextField
             variant="outlined"
             fullWidth
-            valur = {itemName}
+            value = {itemName}
             onChange = {(e)=>setItemName(e.target.value)}
             />
             <Button 
             variant="contained"
-            color = "inherit"
             onClick = {()=>{addItem(itemName) 
               setItemName('') 
               handleClose()}}>
                 Add
-              </Button>
+            </Button>
           </Stack>
         </Box>
       </Modal>

@@ -4,7 +4,6 @@ import {useState, useEffect} from "react";
 import {firestore} from "@/firebase";
 import {Box, Typography, Modal, Stack, TextField, Button} from "@mui/material";
 import {collection, deleteDoc, doc, getDocs, query, getDoc, setDoc} from "firebase/firestore";
-import {palette} from "@mui/system"
 
 export default function Home() {
   const [inventory, setInventory] = useState([])
